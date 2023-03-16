@@ -13,7 +13,7 @@ const filterByServiceRecord = (el) => {
 const sortByScore = (arr) => {
     let newArr = arr.slice();
     return newArr.sort(function (maxScore, minScore) {
-        return maxScore.score - minScore.score;
+        return minScore.score - maxScore.score;
     })
 };
 
